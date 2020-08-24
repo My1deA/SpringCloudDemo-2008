@@ -1,0 +1,21 @@
+# spring application name
+spring:
+  application:
+    name: zuul
+# port
+server:
+  port: 8500
+# register
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka/
+# zuul
+zuul:
+  routes:
+    # 这里可以自定义
+    zuultest:
+      # 匹配的路由规则
+      path: /zuultest/**
+      # 路由的目标服务名
+      serviceId: product-client

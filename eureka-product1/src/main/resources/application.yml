@@ -1,0 +1,12 @@
+# spring service 别名
+spring:
+  application:
+    name: product-client
+# 端口
+server:
+  port: 8200
+# eureka 注册
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka/

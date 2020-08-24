@@ -1,0 +1,17 @@
+#spring service别名
+spring:
+  application:
+    name: consumer-feign
+# 端口
+server:
+  port: 8300
+# 注册到 eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka/
+
+# feign 熔断器
+feign:
+  hystrix:
+    enabled: true

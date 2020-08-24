@@ -1,0 +1,12 @@
+# spring servie name
+spring:
+  application:
+    name: consumer-ribbon
+# 端口
+server:
+  port: 8400
+# eureka 注册
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka/
